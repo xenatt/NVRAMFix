@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6154.17"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="NVRamFix" customModuleProvider="target">
+            <connections>
+                <outlet property="ConfirmIcon" destination="rSB-kY-Els" id="KdY-wp-H2d"/>
+                <outlet property="ConfirmIconText" destination="7pa-QK-2re" id="WV5-ra-XAQ"/>
+                <outlet property="ConfirmText" destination="tIf-9E-PjI" id="KWH-Rn-SDN"/>
+                <outlet property="ConfirmTitle" destination="h9z-vN-rQJ" id="LiE-sz-ep3"/>
+                <outlet property="ConfirmWindow" destination="5gP-BG-mCN" id="fd2-p6-GPn"/>
+                <outlet property="MainWindow" destination="vlM-5p-VkR" id="U1s-cf-e1g"/>
+                <outlet property="ResultText" destination="A2S-j7-9xp" id="IHI-nJ-LLA"/>
+                <outlet property="ResultTitle" destination="bxB-8i-lIN" id="P8M-af-aOi"/>
+                <outlet property="ResultWindow" destination="Py1-4Y-lLA" id="sSQ-dE-23d"/>
+                <outlet property="VersionTEXT" destination="JKs-52-xA4" id="8sr-Qa-Akg"/>
+                <outlet property="window" destination="pua-9H-Fqt" id="ERY-38-q43"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="NVRamFix" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="NVRamFix" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About NVRamFix" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="ShowAboutWindow:" target="Voe-Tx-rLC" id="5g6-Nc-WmY"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="Services" id="NMo-om-nkz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="Hide NVRamFix" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit NVRamFix" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="dMs-cI-mzQ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="File" id="bib-Uj-vzu">
+                        <items>
+                            <menuItem title="Close" id="DVo-aG-piG">
+                                <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="SetQUIT:" target="Voe-Tx-rLC" id="T0s-cP-Egn"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="NvRamFix" restorable="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="vlM-5p-VkR" customClass="NSPanel">
+            <windowStyleMask key="styleMask" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="136" y="163" width="306" height="200"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="XEV-FB-21s">
+                <rect key="frame" x="0.0" y="0.0" width="306" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Jz-23-hdI">
+                        <rect key="frame" x="18" y="20" width="133" height="24"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Fusion Loader" id="Pa8-Vu-hRY">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9c-AE-u7H">
+                        <rect key="frame" x="155" y="20" width="133" height="24"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="FIx NVRam" id="5hA-aC-1TO">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button appearanceType="aqua" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2N-2M-UU1">
+                        <rect key="frame" x="157" y="20" width="129" height="160"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="fix" imagePosition="above" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="2Dm-L1-7G6">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="NVRamFixIconClick:" target="Voe-Tx-rLC" id="Bet-dL-WjH"/>
+                        </connections>
+                    </button>
+                    <button appearanceType="aqua" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lK0-DW-voE">
+                        <rect key="frame" x="20" y="20" width="129" height="160"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="install" imagePosition="above" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="yTV-v7-4Zo">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="FuosionLoaderIconClick:" target="Voe-Tx-rLC" id="Db0-qv-GED"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="497" y="777"/>
+        </window>
+        <window title="NvRamFix" restorable="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="5gP-BG-mCN" customClass="NSPanel">
+            <windowStyleMask key="styleMask" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="136" y="163" width="625" height="200"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="mIY-sw-gyL">
+                <rect key="frame" x="0.0" y="0.0" width="625" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmL-RS-Kvw">
+                        <rect key="frame" x="337" y="20" width="133" height="24"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Cancel" id="u2s-P6-2ir">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button appearanceType="aqua" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6rt-h3-WDk">
+                        <rect key="frame" x="339" y="20" width="129" height="160"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cancel" imagePosition="above" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="xTc-vz-ZfA">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="ConfirmIconCanelClick:" target="Voe-Tx-rLC" id="ROw-ed-fwx"/>
+                        </connections>
+                    </button>
+                    <textField appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pa-QK-2re">
+                        <rect key="frame" x="474" y="20" width="133" height="24"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Action" id="xia-l1-1Do">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button appearanceType="aqua" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rSB-kY-Els">
+                        <rect key="frame" x="476" y="20" width="129" height="160"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="fix" imagePosition="above" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="Dka-FN-7dj">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="ConfirmIconClick:" target="Voe-Tx-rLC" id="cK1-0U-Tk4"/>
+                        </connections>
+                    </button>
+                    <textField appearanceType="aqua" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tIf-9E-PjI">
+                        <rect key="frame" x="29" y="52" width="304" height="72"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Fix &quot;Nvram&quot; Success. You have to restart to take effect." id="lAu-AF-nJw">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h9z-vN-rQJ">
+                        <rect key="frame" x="29" y="127" width="304" height="37"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Operation Success!" id="l2k-VL-Y3w">
+                            <font key="font" metaFont="system" size="17"/>
+                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="565.5" y="1080"/>
+        </window>
+        <window title="NvRamFix" restorable="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Py1-4Y-lLA" customClass="NSPanel">
+            <windowStyleMask key="styleMask" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="136" y="163" width="488" height="200"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="J07-ie-kBt">
+                <rect key="frame" x="0.0" y="0.0" width="488" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cms-mZ-9Ju">
+                        <rect key="frame" x="337" y="20" width="133" height="24"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Close" id="V4s-JC-loF">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button appearanceType="aqua" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="15C-Po-SOv">
+                        <rect key="frame" x="339" y="20" width="129" height="160"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="cancel" imagePosition="above" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="Svy-hn-mes">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="ResultIconCloseClick:" target="Voe-Tx-rLC" id="ZgW-Zh-PVh"/>
+                        </connections>
+                    </button>
+                    <textField appearanceType="aqua" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A2S-j7-9xp">
+                        <rect key="frame" x="29" y="52" width="304" height="74"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Rebuild KernelCaches Success You Need to Restart System." id="Qbo-zC-beu">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxB-8i-lIN">
+                        <rect key="frame" x="29" y="134" width="304" height="31"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Operation  Success!" id="1V8-H1-gfd">
+                            <font key="font" metaFont="system" size="17"/>
+                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="497" y="1357"/>
+        </window>
+        <window releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="pua-9H-Fqt">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="574" height="349"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="cD7-cj-y4n">
+                <rect key="frame" x="0.0" y="0.0" width="574" height="349"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRt-sC-pQn">
+                        <rect key="frame" x="20" y="42" width="265" height="265"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo" id="qB9-Fd-bCU"/>
+                    </imageView>
+                    <textField appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cv1-4D-v5I">
+                        <rect key="frame" x="291" y="262" width="265" height="33"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="About NVRamFix" id="TCC-h1-kbj">
+                            <font key="font" metaFont="system" size="17"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField appearanceType="aqua" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yW5-Ci-7zu">
+                        <rect key="frame" x="291" y="42" width="265" height="187"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="V4k-JQ-CCW">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">NVRamFix Functional Create nvram file  or Install NVRam LOader For FusionDrive.
+NVRamFix Development for Clover EFI Boot Loader.
+NVRamFix is a Part of Project iFix by Hackintosh Thailand Commutnity
+Development By Nattapapong Pullkhow
+
+Contacts
+email : exenatt@gmail.com
+twitter : @xenatt </string>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField appearanceType="aqua" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JKs-52-xA4">
+                        <rect key="frame" x="291" y="237" width="265" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="gsy-EA-Q0H">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="612" y="438.5"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="cancel" width="372.3636474609375" height="372.3636474609375"/>
+        <image name="fix" width="512" height="512"/>
+        <image name="install" width="512" height="512"/>
+        <image name="logo" width="256" height="256"/>
+    </resources>
+</document>

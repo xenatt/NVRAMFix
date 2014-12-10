@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4E07B791A2C4D7C00D6A0CE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E07B781A2C4D7C00D6A0CE /* main.swift */; };
+		B4E07B7B1A2C4D7C00D6A0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E07B7A1A2C4D7C00D6A0CE /* AppDelegate.swift */; };
+		B4E07B7D1A2C4D7C00D6A0CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E07B7C1A2C4D7C00D6A0CE /* Images.xcassets */; };
+		B4E07B801A2C4D7C00D6A0CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4E07B7E1A2C4D7C00D6A0CE /* MainMenu.xib */; };
+		B4E07B8C1A2C4D7C00D6A0CE /* NVRamFixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E07B8B1A2C4D7C00D6A0CE /* NVRamFixTests.swift */; };
+		B4E07B961A2C625400D6A0CE /* com.hackintoshthailand.ifix.fusion.nvram.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4E07B951A2C625400D6A0CE /* com.hackintoshthailand.ifix.fusion.nvram.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4E07B861A2C4D7C00D6A0CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4E07B6B1A2C4D7C00D6A0CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4E07B721A2C4D7C00D6A0CE;
+			remoteInfo = NVRamFix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B4E07B731A2C4D7C00D6A0CE /* NVRamFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVRamFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E07B771A2C4D7C00D6A0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4E07B781A2C4D7C00D6A0CE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B4E07B7A1A2C4D7C00D6A0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4E07B7C1A2C4D7C00D6A0CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B4E07B7F1A2C4D7C00D6A0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B4E07B851A2C4D7C00D6A0CE /* NVRamFixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NVRamFixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E07B8A1A2C4D7C00D6A0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4E07B8B1A2C4D7C00D6A0CE /* NVRamFixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVRamFixTests.swift; sourceTree = "<group>"; };
+		B4E07B951A2C625400D6A0CE /* com.hackintoshthailand.ifix.fusion.nvram.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.hackintoshthailand.ifix.fusion.nvram.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4E07B701A2C4D7C00D6A0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E07B821A2C4D7C00D6A0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4E07B6A1A2C4D7C00D6A0CE = {
+			isa = PBXGroup;
+			children = (
+				B4E07B751A2C4D7C00D6A0CE /* NVRamFix */,
+				B4E07B881A2C4D7C00D6A0CE /* NVRamFixTests */,
+				B4E07B741A2C4D7C00D6A0CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4E07B741A2C4D7C00D6A0CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4E07B731A2C4D7C00D6A0CE /* NVRamFix.app */,
+				B4E07B851A2C4D7C00D6A0CE /* NVRamFixTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4E07B751A2C4D7C00D6A0CE /* NVRamFix */ = {
+			isa = PBXGroup;
+			children = (
+				B4E07B7A1A2C4D7C00D6A0CE /* AppDelegate.swift */,
+				B4E07B7C1A2C4D7C00D6A0CE /* Images.xcassets */,
+				B4E07B7E1A2C4D7C00D6A0CE /* MainMenu.xib */,
+				B4E07B761A2C4D7C00D6A0CE /* Supporting Files */,
+			);
+			path = NVRamFix;
+			sourceTree = "<group>";
+		};
+		B4E07B761A2C4D7C00D6A0CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4E07B951A2C625400D6A0CE /* com.hackintoshthailand.ifix.fusion.nvram.plist */,
+				B4E07B771A2C4D7C00D6A0CE /* Info.plist */,
+				B4E07B781A2C4D7C00D6A0CE /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4E07B881A2C4D7C00D6A0CE /* NVRamFixTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4E07B8B1A2C4D7C00D6A0CE /* NVRamFixTests.swift */,
+				B4E07B891A2C4D7C00D6A0CE /* Supporting Files */,
+			);
+			path = NVRamFixTests;
+			sourceTree = "<group>";
+		};
+		B4E07B891A2C4D7C00D6A0CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4E07B8A1A2C4D7C00D6A0CE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4E07B721A2C4D7C00D6A0CE /* NVRamFix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4E07B8F1A2C4D7C00D6A0CE /* Build configuration list for PBXNativeTarget "NVRamFix" */;
+			buildPhases = (
+				B4E07B6F1A2C4D7C00D6A0CE /* Sources */,
+				B4E07B701A2C4D7C00D6A0CE /* Frameworks */,
+				B4E07B711A2C4D7C00D6A0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NVRamFix;
+			productName = NVRamFix;
+			productReference = B4E07B731A2C4D7C00D6A0CE /* NVRamFix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4E07B841A2C4D7C00D6A0CE /* NVRamFixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4E07B921A2C4D7C00D6A0CE /* Build configuration list for PBXNativeTarget "NVRamFixTests" */;
+			buildPhases = (
+				B4E07B811A2C4D7C00D6A0CE /* Sources */,
+				B4E07B821A2C4D7C00D6A0CE /* Frameworks */,
+				B4E07B831A2C4D7C00D6A0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4E07B871A2C4D7C00D6A0CE /* PBXTargetDependency */,
+			);
+			name = NVRamFixTests;
+			productName = NVRamFixTests;
+			productReference = B4E07B851A2C4D7C00D6A0CE /* NVRamFixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4E07B6B1A2C4D7C00D6A0CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Nattapong Pullkhow";
+				TargetAttributes = {
+					B4E07B721A2C4D7C00D6A0CE = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					B4E07B841A2C4D7C00D6A0CE = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = B4E07B721A2C4D7C00D6A0CE;
+					};
+				};
+			};
+			buildConfigurationList = B4E07B6E1A2C4D7C00D6A0CE /* Build configuration list for PBXProject "NVRamFix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4E07B6A1A2C4D7C00D6A0CE;
+			productRefGroup = B4E07B741A2C4D7C00D6A0CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4E07B721A2C4D7C00D6A0CE /* NVRamFix */,
+				B4E07B841A2C4D7C00D6A0CE /* NVRamFixTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4E07B711A2C4D7C00D6A0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E07B961A2C625400D6A0CE /* com.hackintoshthailand.ifix.fusion.nvram.plist in Resources */,
+				B4E07B7D1A2C4D7C00D6A0CE /* Images.xcassets in Resources */,
+				B4E07B801A2C4D7C00D6A0CE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E07B831A2C4D7C00D6A0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4E07B6F1A2C4D7C00D6A0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E07B7B1A2C4D7C00D6A0CE /* AppDelegate.swift in Sources */,
+				B4E07B791A2C4D7C00D6A0CE /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E07B811A2C4D7C00D6A0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E07B8C1A2C4D7C00D6A0CE /* NVRamFixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4E07B871A2C4D7C00D6A0CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4E07B721A2C4D7C00D6A0CE /* NVRamFix */;
+			targetProxy = B4E07B861A2C4D7C00D6A0CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4E07B7E1A2C4D7C00D6A0CE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4E07B7F1A2C4D7C00D6A0CE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4E07B8D1A2C4D7C00D6A0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4E07B8E1A2C4D7C00D6A0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B4E07B901A2C4D7C00D6A0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NVRamFix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B4E07B911A2C4D7C00D6A0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NVRamFix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B4E07B931A2C4D7C00D6A0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NVRamFix.app/Contents/MacOS/NVRamFix";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NVRamFixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		B4E07B941A2C4D7C00D6A0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NVRamFix.app/Contents/MacOS/NVRamFix";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NVRamFixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4E07B6E1A2C4D7C00D6A0CE /* Build configuration list for PBXProject "NVRamFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4E07B8D1A2C4D7C00D6A0CE /* Debug */,
+				B4E07B8E1A2C4D7C00D6A0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4E07B8F1A2C4D7C00D6A0CE /* Build configuration list for PBXNativeTarget "NVRamFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4E07B901A2C4D7C00D6A0CE /* Debug */,
+				B4E07B911A2C4D7C00D6A0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B4E07B921A2C4D7C00D6A0CE /* Build configuration list for PBXNativeTarget "NVRamFixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4E07B931A2C4D7C00D6A0CE /* Debug */,
+				B4E07B941A2C4D7C00D6A0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4E07B6B1A2C4D7C00D6A0CE /* Project object */;
+}
